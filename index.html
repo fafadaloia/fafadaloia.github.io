@@ -11,13 +11,12 @@
             background-color: #161a79;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #ffffff;
-            height: 100vh;
-            font-size: 18px;
             margin: 0; /* Elimina margen predeterminado */
             display: flex;
             justify-content: center; /* Centra horizontalmente */
             align-items: center; /* Centra verticalmente */
             flex-direction: column; /* Alinea contenido en columna */
+            min-height: 100vh;
         }
 
         .main-container {
@@ -31,7 +30,7 @@
         .container {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(5, 1fr);
+            grid-template-rows: repeat(5, auto); /* Ajusta filas al contenido */
             gap: 20px;
             width: 80%;
         }
@@ -84,11 +83,10 @@
 </head>
 <body>
     <div class="main-container">
-
         <div class="project">
-                <img src="logosmain/titulo.png" alt="Prácticas Profesionalizantes 2024" class="project-logo">
-                <h3></h3>
-            </div>
+            <img src="logosmain/titulo.png" alt="Prácticas Profesionalizantes 2024" class="project-logo">
+            <h3></h3>
+        </div>
 
         <div class="container">
             <div class="project">
