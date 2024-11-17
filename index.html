@@ -11,10 +11,10 @@
             background-color: #161a79;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #ffffff;
-            margin: 0; /* Elimina margen predeterminado */
+            margin: 0;
             display: flex;
             justify-content: center; /* Centra horizontalmente */
-            align-items: flex-start; /* Alínea elementos al principio */
+            align-items: center; /* Centra verticalmente */
             flex-direction: column; /* Alinea contenido en columna */
             min-height: 100vh;
             padding: 20px;
@@ -30,12 +30,12 @@
         .container {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: auto;
+            grid-template-rows: repeat(5, auto);
             gap: 20px;
             width: 80%;
         }
 
-        .proyecto {
+        .project {
             background: rgba(0, 0, 0, 0.7);
             padding: 20px;
             border-radius: 8px;
@@ -43,23 +43,24 @@
             width: 100%;
         }
 
-        .proyecto img {
-            max-width: 150px;
-            margin-bottom: 10px;
-        }
-
-        .proyecto iframe {
-            width: 100%;
+        .titulo {
             max-width: 420px;
-            height: 236px;
-            display: block;
-            margin-bottom: 10px;
-            border: none;
+            width: 100%;
+            margin: 0 auto 20px auto; /* Aumenta el espacio inferior para separación */
         }
 
         .project-logo {
-            width: 100px;
-            height: auto;
+            max-width: 150px;
+            margin: 0 auto 10px auto;
+            display: block;
+        }
+
+        .project iframe {
+            width: 100%;
+            max-width: 420px;
+            height: 236px;
+            border: none;
+            display: block;
             margin-bottom: 10px;
         }
 
@@ -76,6 +77,7 @@
             font-family: 'Exo 2', sans-serif;
             font-size: 22px;
             max-width: 420px;
+            margin: 0 auto;
         }
 
     </style>
@@ -83,7 +85,7 @@
 <body>
     <div class="main-container">
         <div class="project">
-            <img src="logosmain/titulo.png" alt="Prácticas Profesionalizantes 2024" class="project-logo">
+            <img src="logosmain/titulo.png" alt="Prácticas Profesionalizantes 2024" class="titulo">
             <h3></h3>
         </div>
 
@@ -91,7 +93,7 @@
             <div class="project">
                 <img src="logospps/proyecto1.png" alt="HTJS" class="project-logo">
                 <h3></h3>
-                <iframe width="420" height="236" src="https://www.youtube.com/embed/XYt8nDzgPC4?si=hoAuxtODMBzcBXgi" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/XYt8nDzgPC4?si=hoAuxtODMBzcBXgi" allowfullscreen></iframe>
                 <p>tengunpardeuacahskeasenmemasenelparkin.</p>
                 <a href="https://www.ilstecar.com/pp/dmlinfo" class="ver-mas" target="_blank">Ver más</a>
             </div>  
@@ -99,7 +101,7 @@
             <div class="project">
                 <img src="logospps/proyecto2.png" alt="NeKa" class="project-logo">
                 <h3></h3>
-                <iframe width="420" height="236" src="https://www.youtube.com/embed/lR8Abbs2q-w?si=3wlFRVgpK-vcs7OZ" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/lR8Abbs2q-w?si=3wlFRVgpK-vcs7OZ" allowfullscreen></iframe>
                 <p>planchasiplanchasiplanchasdesanacs.</p>
                 <a href="https://www.ilstecar.com/pp/latindata" class="ver-mas" target="_blank">Ver más</a>
             </div>
@@ -107,7 +109,7 @@
             <div class="project">
                 <img src="logospps/proyecto3.png" alt="Biblioteca Escolar" class="project-logo">
                 <h3></h3>
-                <iframe width="420" height="236" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
                 <p>plancahsiplanchasiplanchasdesanacs.</p>
                 <a href="https://www.ilstecar.com/pp/bibliotecainfo" class="ver-mas" target="_blank">Ver más</a>
             </div>
@@ -115,7 +117,7 @@
             <div class="project">
                 <img src="logospps/proyecto4.png" alt="DHL" class="project-logo">
                 <h3></h3>
-                <iframe width="420" height="236" src="https://www.youtube.com/embed/VIDEO_ID_4" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" allowfullscreen></iframe>
                 <p>Breve sinopsis del proyecto 1.</p>
                 <a href="https://www.ilstecar.com/pp/ecea" class="ver-mas" target="_blank">Ver más</a>
             </div>
