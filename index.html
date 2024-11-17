@@ -13,31 +13,32 @@
             color: #ffffff;
             height: 100vh;
             font-size: 18px;
+            margin: 0; /* Elimina margen predeterminado */
             display: flex;
             justify-content: center; /* Centra horizontalmente */
             align-items: center; /* Centra verticalmente */
-            margin: 0; /* Elimina margen predeterminado */
         }
 
-        header {
+        .main-container {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
-            padding: 20px;
-            background: transparent;
+            justify-content: center;
             width: 100%;
         }
 
-        #logo-central {
-            margin: 0 auto;
+        header {
+            width: 100%;
+            padding: 20px;
+            background: transparent;
+            text-align: center;
         }
 
         .container {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(4, 1fr);
-            gap: 20px;
-            padding: 30px;
+            gap: 40px;
             width: 80%;
         }
 
@@ -97,42 +98,11 @@
     </style>
 </head>
 <body>
-    <header style="position: relative; height: 100px; width: 100%;">
-        <img src="logosmain/titulo.png" alt="Prácticas Profesionalizantes 2024" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
-    </header>
+    <div class="main-container">
+        <header>
+            <img src="logosmain/titulo.png" alt="Prácticas Profesionalizantes 2024">
+        </header>
 
-    <div class="container">
-        <div class="project">
-            <img src="logospps/proyecto1.png" alt="HTJS" class="project-logo">
-            <h3></h3>
-            <iframe width="420" height="236" src="https://www.youtube.com/embed/XYt8nDzgPC4?si=hoAuxtODMBzcBXgi" frameborder="0" allowfullscreen></iframe>
-            <p>tengunpardeuacahskeasenmemasenelparkin.</p>
-            <a href="https://www.ilstecar.com/pp/dmlinfo" class="ver-mas" target="_blank">Ver más</a>
-        </div>  
-
-        <div class="project">
-            <img src="logospps/proyecto2.png" alt="NeKa" class="project-logo">
-            <h3></h3>
-            <iframe width="420" height="236" src="https://www.youtube.com/embed/lR8Abbs2q-w?si=3wlFRVgpK-vcs7OZ" frameborder="0" allowfullscreen></iframe>
-            <p>planchasiplanchasiplanchasdesanacs.</p>
-            <a href="https://www.ilstecar.com/pp/latindata" class="ver-mas" target="_blank">Ver más</a>
-        </div>
-
-        <div class="project">
-            <img src="logospps/proyecto3.png" alt="Biblioteca Escolar" class="project-logo">
-            <h3></h3>
-            <iframe width="420" height="236" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
-            <p>plancahsiplanchasiplanchasdesanacs.</p>
-            <a href="https://www.ilstecar.com/pp/bibliotecainfo" class="ver-mas" target="_blank">Ver más</a>
-        </div>
-
-        <div class="project">
-            <img src="logospps/proyecto4.png" alt="DHL" class="project-logo">
-            <h3></h3>
-            <iframe width="420" height="236" src="https://www.youtube.com/embed/VIDEO_ID_4" frameborder="0" allowfullscreen></iframe>
-            <p>Breve sinopsis del proyecto 1.</p>
-            <a href="https://www.ilstecar.com/pp/ecea" class="ver-mas" target="_blank">Ver más</a>
-        </div>
-    </div>
-</body>
-</html>
+        <div class="container">
+            <div class="project">
+                <img src="logospps/proyecto1.png" alt="
