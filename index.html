@@ -13,9 +13,9 @@
             color: #ffffff;
             margin: 0;
             display: flex;
-            justify-content: left;
-            align-items: left;
-            flex-direction: column;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            flex-direction: column; /* Alinea contenido en columna */
             min-height: 100vh;
             padding: 20px;
         }
@@ -23,7 +23,7 @@
         .main-container {
             display: flex;
             flex-direction: column;
-            align-items: left;
+            align-items: center;
             width: 100%;
             background: transparent;
         }
@@ -32,7 +32,7 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(5, auto);
-            gap: 80px;
+            gap: 20px;
             width: 80%;
             background: transparent;
         }
@@ -40,9 +40,9 @@
         .project {
             padding: 20px;
             border-radius: 8px;
-            text-align: center;
+            text-align: left;
             width: 100%;
-            background: transparent;
+            background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para destacar los proyectos */
         }
 
         .titulo {
@@ -53,9 +53,8 @@
 
         .project-logo {
             max-width: 150px;
-            margin: 0;
+            margin: 0 auto 10px auto; /* Centra el logo de los proyectos */
             display: block;
-            align-items: left;
         }
 
         .project iframe {
@@ -64,8 +63,7 @@
             height: 236px;
             border: none;
             display: block;
-            margin-bottom: 10px;
-            align-items: left;
+            margin: 0 auto 10px auto; /* Centra los videos */
         }
 
         .ver-mas {
@@ -75,14 +73,15 @@
             background-color: #ffae00;
             text-decoration: none;
             border-radius: 5px;
-            align-items: left;
+            margin: 0 auto; /* Centra el botón */
         }
 
         p {
             font-family: 'Exo 2', sans-serif;
             font-size: 22px;
             max-width: 420px;
-            align-items: left;
+            margin: 0 auto; /* Centra los párrafos */
+            text-align: center; /* Justifica el texto al centro */
         }
 
     </style>
@@ -91,7 +90,6 @@
     <div class="main-container">
         <div class="project">
             <img src="logosmain/titulo.png" alt="Prácticas Profesionalizantes 2024" class="titulo">
-            
             <h3></h3>
         </div>
 
