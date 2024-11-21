@@ -13,27 +13,27 @@
             color: #ffffff;
             margin: 0;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: flex-start;
+            align-items: flex-start;
             flex-direction: column;
             min-height: 100vh;
             padding: 20px;
         }
 
         .main-container {
+            width: 80%;
+            max-width: 600px;
+            background: transparent;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            width: 100%;
-            background: transparent;
+            align-items: flex-start;
         }
 
         .project-table {
             border-collapse: separate;
             border-spacing: 10px;
-            width: 80%;
+            width: 100%;
             background: transparent;
-            margin: 0 auto;
         }
 
         .project-cell {
@@ -48,7 +48,8 @@
         .titulo {
             max-width: 600px;
             width: 100%;
-            margin: 0 auto 20px auto;
+            margin-bottom: 20px;
+            text-align: left;
         }
 
         .project-logo {
@@ -89,9 +90,7 @@
 </head>
 <body>
     <div class="main-container">
-        <div class="project">
-            <img align="left" src="logosmain/titulo.png" alt="Prácticas Profesionalizantes 2024" class="titulo">
-        </div>
+        <img src="logosmain/titulo.png" alt="Prácticas Profesionalizantes 2024" class="titulo">
 
         <table class="project-table">
             <tr>
