@@ -66,13 +66,14 @@
 
         .ver-mas {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 10px 0; /* Ajustar padding para que el ancho total del botón coincida con el iframe */
             color: #000000;
             background-color: #ffae00;
             text-decoration: none;
             border-radius: 5px;
             margin-top: 10px;
-            width: 680px; /* Ancho máximo de los botones */
+            width: 100%; /* Asegurar que el botón ocupe todo el ancho del contenedor */
+            box-sizing: border-box; /* Incluir padding en el cálculo del ancho */
         }
 
         p {
